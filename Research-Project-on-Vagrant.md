@@ -75,20 +75,20 @@ Providers are responsible for:
 * How can Vagrant be installed and configured on different operating systems?
 
 Installation of vagrant on Different Operating Systems
-
-    1. Windows
-Steps:
-1. Install a virtualization provider:
+1. Windows
+   
+   Steps:
+3. Install a virtualization provider:
 * Download and install VirtualBox
-2. Download Vagrant:
+1. Download Vagrant:
 * Go to the official Vagrant website and download the Windows installer
-3. Run the installer:
+1. Run the installer:
 * Follow the setup wizard and restart your system if prompted
-4.  Verify installation:
+1.  Verify installation:
 * Run vagrant version  commmand using window powershell 
 
-    2. macOS
    
+ 2. MacOS  
 Option 1: Using Installer (recommended)
 * Install VirtualBox
 * Download Vagrant .dmg from the official site
@@ -104,7 +104,7 @@ Verify:
 
 vagrant --version
 
-    3. Linux (Ubuntu/Debian-based)
+3. linux
 Steps:
 Install a provider:
 * run sudo apt update
@@ -673,10 +673,10 @@ Each VM consumes:
 
 On shared CI runners:
 
-    * Multiple builds can overload the system
+   * Multiple builds can overload the system
    * Builds may queue or fail under heavy load
   
-  3. Environment Consistency Issues
+  1. Environment Consistency Issues
 
 Even though Vagrant promotes reproducibility:
 
