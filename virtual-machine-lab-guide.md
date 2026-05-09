@@ -65,6 +65,7 @@ end"
 vagrant up
 
 Output 1
+
 ![screenshot](./images/vagrant-up.PNG)
 
 **Newly created virtual machine
