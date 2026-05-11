@@ -17,7 +17,10 @@ project**
 **Create a New Directory:**
 * Use the following command to create a new directory named vagrant getting started: 
 
-Run mkdir vagrant_getting_started
+Run
+```
+mkdir vagrant_getting_started
+```
 
 **Output**
 
@@ -26,12 +29,17 @@ Run mkdir vagrant_getting_started
 **Navigate into Your New Directory:**
 * Change into your newly created directory with: 
 
-* Run cd vagrant_getting_started
+* Run 
+  ```
+  cd vagrant_getting_started
 
 **4. Initialize the Vagrant Project**
 
 * Run the following commands:
+
+```
 vagrant init
+```
 
 **Output**
 
@@ -50,11 +58,13 @@ To set up your virtual machine, you need to specify which base box to use in you
 
 * Replace the existing contents with the following code:
 
-"Vagrant.configure("2") do |config|
+```
+Vagrant.configure("2") do |config|
 
 config.vm.box = "hashicorp/bionic64"
 
-end"
+end
+```
 
 **Explanation:** The line config.vm.box = "hashicorp/bionic64" tells Vagrant to use the hashicorp/bionic64 box as the base for your virtual machine
 
@@ -62,8 +72,9 @@ end"
 **6. Start Your Virtual Machine**
 
 * Run the Command in the terminal:
+```
 vagrant up
-
+```
 Output 1
 
 ![screenshot](./images/vagrant-up.PNG)
@@ -74,15 +85,21 @@ Output 1
 
 **Accessing the Virtual Machine:**
 
-Run vagrant ssh
-
+Run 
+```
+vagrant ssh
+```
 **7. Stopping and Destroying the Virtual Machine**
 
 * To Stop the Virtual Machine:
-    Run vagrant halt
-   
+    Run 
+    ```
+    vagrant halt
+   ```
 * To Completely Remove the Virtual Machine:
-    Run  vagrant destroy
+    Run  
+    ```
+    vagrant destroy
 
 Output
 
